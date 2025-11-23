@@ -1,16 +1,84 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Block vs Inline - Element Identification</title>
+ 
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Reference image (local path provided as requested) -->
+ 
+  <!-- button (inline) -->
+  <div class="divblock">
+    <button data-ns-test="block-inline-button">Test1</button>
+    <button data-ns-test="block-inline-button">Test2</button>
+    <span class="answer">Answer: Inline</span>
+  </div>
+
+  <!-- div (block) -->
+  <div class="divblock">
+    <div data-ns-test="block-inline-div">Test1</div>
+    <div data-ns-test="block-inline-div">Test2</div>
+    <span class="answer">Answer: Block</span>
+  </div>
+
+  <!-- span (inline) -->
+  <div class="divblock">
+    <span data-ns-test="block-inline-span">Test1</span>
+    <span data-ns-test="block-inline-span">Test2</span>
+    <span class="answer">Answer: Inline</span>
+  </div>
+
+  <!-- p (block) -->
+  <div class="divblock">
+    <p data-ns-test="block-inline-p">Test1</p>
+    <p data-ns-test="block-inline-p">Test2</p>
+    <span class="answer">Answer: Block</span>
+  </div>
+
+  <!-- input (inline) - use value attribute since inputs don't have inner text -->
+  <div class="divblock">
+    <input type="text" data-ns-test="block-inline-input" value="Test1">
+    <input type="text" data-ns-test="block-inline-input" value="Test2">
+    <span class="answer">Answer: Inline</span>
+  </div>
+
+  <!-- cite (inline) -->
+  <div class="divblock">
+    <cite data-ns-test="block-inline-cite">Test1</cite>
+    <cite data-ns-test="block-inline-cite">Test2</cite>
+    <span class="answer">Answer: Inline</span>
+  </div>
+
+  <!-- code (inline) -->
+  <div class="divblock">
+    <code data-ns-test="block-inline-code">Test1</code>
+    <code data-ns-test="block-inline-code">Test2</code>
+    <span class="answer">Answer: Inline</span>
+  </div>
+
+  <!-- h1 (block) -->
+  <div class="divblock">
+    <h1 data-ns-test="block-inline-h1">Test1</h1>
+    <h1 data-ns-test="block-inline-h1">Test2</h1>
+    <span class="answer">Answer: Block</span>
+  </div>
+
+  <!-- sup (inline) -->
+  <div class="divblock">
+    <span>Base<sup data-ns-test="block-inline-sup">Test1</sup></span>
+    <span>Base<sup data-ns-test="block-inline-sup">Test2</sup></span>
+    <span class="answer">Answer: Inline</span>
+  </div>
+
+  <!-- sub (inline) -->
+  <div class="divblock">
+    <span>Base<sub data-ns-test="block-inline-sub">Test1</sub></span>
+    <span>Base<sub data-ns-test="block-inline-sub">Test2</sub></span>
+    <span class="answer">Answer: Inline</span>
+  </div>
 
 </body>
-
 </html>
