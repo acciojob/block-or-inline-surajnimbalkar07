@@ -4,12 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Block vs Inline - Element Identification</title>
- 
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Reference image (local path provided as requested) -->
- 
   <!-- button (inline) -->
   <div class="divblock">
     <button data-ns-test="block-inline-button">Test1</button>
@@ -38,7 +36,7 @@
     <span class="answer">Answer: Block</span>
   </div>
 
-  <!-- input (inline) - use value attribute since inputs don't have inner text -->
+  <!-- input (inline) -->
   <div class="divblock">
     <input type="text" data-ns-test="block-inline-input" value="Test1">
     <input type="text" data-ns-test="block-inline-input" value="Test2">
@@ -68,15 +66,15 @@
 
   <!-- sup (inline) -->
   <div class="divblock">
-    <span>Base<sup data-ns-test="block-inline-sup">Test1</sup></span>
-    <span>Base<sup data-ns-test="block-inline-sup">Test2</sup></span>
+    <sup data-ns-test="block-inline-sup">Test1</sup>
+    <sup data-ns-test="block-inline-sup">Test2</sup>
     <span class="answer">Answer: Inline</span>
   </div>
 
   <!-- sub (inline) -->
   <div class="divblock">
-    <span>Base<sub data-ns-test="block-inline-sub">Test1</sub></span>
-    <span>Base<sub data-ns-test="block-inline-sub">Test2</sub></span>
+    <sub data-ns-test="block-inline-sub">Test1</sub>
+    <sub data-ns-test="block-inline-sub">Test2</sub>
     <span class="answer">Answer: Inline</span>
   </div>
 
